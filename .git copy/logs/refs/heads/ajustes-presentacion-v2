@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 f7f4e130aa50481b47a1994182b3a12834fea7c2 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795454068 -0300	branch: Created from HEAD
+f7f4e130aa50481b47a1994182b3a12834fea7c2 be1fbf417ae6cd80128e2200a36efba986e7d1b9 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795460276 -0300	commit: fix: corrige cantidad de casos de prueba en lamina 14
+be1fbf417ae6cd80128e2200a36efba986e7d1b9 9c0a144402a929fd2814b6cbf0512a596f51c1d5 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795460277 -0300	commit: fix: ajusta estados OWASP de la lamina 12 segun el informe v2.1
+9c0a144402a929fd2814b6cbf0512a596f51c1d5 b91ee316f3cd803297479842b20e3c4c9611bb87 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795460279 -0300	commit: fix: quita copiar de las acciones de la lamina 8 (HU-19 fuera del MVP)
+b91ee316f3cd803297479842b20e3c4c9611bb87 9798c2dc24c607e37d112431da0779102e817744 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795460280 -0300	commit: fix: lamina 2 indica lo construido como reportado por el equipo

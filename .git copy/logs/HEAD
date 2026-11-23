@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 f7f4e130aa50481b47a1994182b3a12834fea7c2 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795454000 -0300	clone: from https://github.com/cristobalpontigo/3buapp-informes-y-presentaciones.git
+f7f4e130aa50481b47a1994182b3a12834fea7c2 f7f4e130aa50481b47a1994182b3a12834fea7c2 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795454068 -0300	checkout: moving from main to ajustes-presentacion-v2
+f7f4e130aa50481b47a1994182b3a12834fea7c2 be1fbf417ae6cd80128e2200a36efba986e7d1b9 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795460276 -0300	commit: fix: corrige cantidad de casos de prueba en lamina 14
+be1fbf417ae6cd80128e2200a36efba986e7d1b9 9c0a144402a929fd2814b6cbf0512a596f51c1d5 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795460277 -0300	commit: fix: ajusta estados OWASP de la lamina 12 segun el informe v2.1
+9c0a144402a929fd2814b6cbf0512a596f51c1d5 b91ee316f3cd803297479842b20e3c4c9611bb87 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795460279 -0300	commit: fix: quita copiar de las acciones de la lamina 8 (HU-19 fuera del MVP)
+b91ee316f3cd803297479842b20e3c4c9611bb87 9798c2dc24c607e37d112431da0779102e817744 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795460280 -0300	commit: fix: lamina 2 indica lo construido como reportado por el equipo
+9798c2dc24c607e37d112431da0779102e817744 9798c2dc24c607e37d112431da0779102e817744 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795477938 -0300	checkout: moving from ajustes-presentacion-v2 to chore/minor-fix
+9798c2dc24c607e37d112431da0779102e817744 2a59d6384fbd6492e14dbdf94bc32a6de0bc0126 Diegozapa23 <diego.zapata15@inacapmail.cl> 1795477949 -0300	commit: some changes

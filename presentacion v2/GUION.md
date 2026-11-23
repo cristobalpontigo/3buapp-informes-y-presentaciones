@@ -27,7 +27,7 @@ Regla para todos: las láminas tienen poco texto a propósito. Cada una abre con
 > "Buenos días, profesor. Somos el equipo de 3Buapp. En la primera entrega diagnosticamos el problema; en esta presentamos el diseño técnico: cronograma, arquitectura 4+1, interfaces, base de datos, seguridad y pruebas. Además, parte de ese diseño ya está construido."
 
 ### 02 · Del problema al plano
-> "En la primera entrega encontramos cinco problemas; están en las tarjetas de arriba. Debajo de cada uno, cómo lo resuelve 3Buapp: cada emisor tenía su formato, ahora hay un CSV estándar validado; nadie revisaba el cálculo, ahora la base calcula y frena una suma mayor que 1; los cambios no dejaban rastro, ahora todo queda registrado; el dato oficial se mezclaba, ahora cada corredor ve lo suyo, y una carga mala llegaba a todos, ahora un supervisor la aprueba antes. Abajo, lo que ya está construido."
+> "En la primera entrega encontramos cinco problemas; están en las tarjetas de arriba. Debajo de cada uno, cómo lo resuelve 3Buapp: cada emisor tenía su formato, ahora hay un CSV estándar validado; nadie revisaba el cálculo, ahora la base calcula y frena una suma mayor que 1; los cambios no dejaban rastro, ahora todo queda registrado; el dato oficial se mezclaba, ahora cada corredor ve lo suyo, y una carga mala llegaba a todos, ahora un supervisor la aprueba antes. Abajo, lo que el equipo reporta como construido."
 
 ### 03 · Scrum marca el ritmo. Kanban, el flujo
 > "Usamos Scrumban. A la izquierda, la parte Scrum: trabajamos en ciclos de dos semanas que siempre siguen la misma rueda: planificar, construir, mostrar al cliente y mejorar. Vamos en el ciclo 2 de 5. A la derecha, la parte Kanban: nuestro tablero real. Cada cuadrito es una tarea y su color es quién la tiene. Es nuestro tablero de GitHub tal como está hoy, con sus estados reales: 7 terminadas (PR integrado), 7 en revisión (PR abierto), 11 listas para empezar y 11 por hacer. Así cualquiera ve en qué está el proyecto sin leer código."
@@ -75,7 +75,7 @@ Regla para todos: las láminas tienen poco texto a propósito. Cada una abre con
 > "Las corredoras compiten entre sí. A la izquierda está toda la tabla: calificaciones de la bolsa, de Andes y de Pacífico. Cuando un analista de Andes consulta, la base filtra y le devuelve solo lo de la bolsa y lo suyo; lo mismo para Pacífico. Abajo está la regla real de nuestra migración. El filtro lo hace la base de datos, no la pantalla, así que aunque alguien manipule la aplicación no puede ver datos de otro."
 
 ### 12 · Los diez riesgos, revisados
-> "Revisamos los diez riesgos de OWASP y los ordenamos por estado: siete controles implementados, dos en curso (dependencias, y autenticación, donde falta la prueba con un usuario real) y uno planificado (cabeceras de seguridad). Abajo, una idea simple: cada dato se valida tres veces, en el navegador, en el servidor y en la base. Las contraseñas se guardan con hash bcrypt."
+> "Revisamos los diez riesgos de OWASP y los ordenamos por estado: tres controles listos (criptografía, integridad y SSRF), seis en curso o por probar (entre ellos control de acceso, autenticación y registro) y uno planificado (cabeceras de seguridad). Abajo, una idea simple: cada dato se valida tres veces, en el navegador, en el servidor y en la base. Las contraseñas se guardan con hash bcrypt."
 
 **Pase:** "Alejandro cierra con cómo lo vamos a probar."
 
@@ -87,7 +87,7 @@ Regla para todos: las láminas tienen poco texto a propósito. Cada una abre con
 > "La estrategia es una pirámide: muchas pruebas unitarias con Vitest, integración sobre las funciones SQL con PGlite y algunas E2E con Playwright, más pruebas de seguridad, estrés y aceptación. Siendo honestos con el estado: hoy corren 9 pruebas en CI y probamos la aprobación de cargas con dos corredores. El 80 % de cobertura del cálculo y las 5.000 filas en 30 segundos son metas del plan, no resultados todavía."
 
 ### 14 · Lo que gana la corredora
-> "Arriba, lo que gana la corredora: cero sumas inválidas grabadas, 30 segundos para validar 5.000 filas, el 100 % de los cambios auditados, ninguna carga sin segunda revisión y 99,5 % de disponibilidad. Son metas, a confirmar con el cliente. Abajo, cómo lo probamos: el caso del documento de nuam. 192.770.580 dividido por 368.745.318 debe dar exactamente 0,52277431, igual en el navegador y en la base. En el informe hay 14 casos críticos más."
+> "Arriba, lo que gana la corredora: cero sumas inválidas grabadas, 30 segundos para validar 5.000 filas, el 100 % de los cambios auditados, ninguna carga sin segunda revisión y 99,5 % de disponibilidad. Son metas, a confirmar con el cliente. Abajo, cómo lo probamos: el caso del documento de nuam. 192.770.580 dividido por 368.745.318 debe dar exactamente 0,52277431, igual en el navegador y en la base. En el informe hay 23 casos críticos más."
 
 ### 15 · Del plano a la construcción
 > "Cerramos con lo que viene. Una sola lógica de negocio y tres formas de usarla: primero la aplicación web, que es el MVP para enero; después la aplicación de escritorio, para que las operaciones críticas se hagan solo en equipos autorizados; y en una tercera etapa, si nuam lo valida, la facturación electrónica conectada al SII mediante un proveedor. Muchas gracias; quedamos atentos a sus preguntas. Y si quieren probarlo, este es el mismo QR de la primera presentación: lleva a la demo."
@@ -106,4 +106,4 @@ Regla para todos: las láminas tienen poco texto a propósito. Cada una abre con
 
 **¿Vitest en vez de Jest?** Vitest funciona nativamente con TypeScript y ESM, sin configuración de Babel, y es rápido en CI.
 
-**¿El doble factor ya funciona?** Está implementado (login, inscripción del factor y exigencia por rol, también comprobada en la base al aprobar). Falta la prueba con un usuario real, que depende de los datos de prueba (DI-1).
+**¿El doble factor ya funciona?** Está integrado según el equipo (login, desafío del factor y exigencia por rol, también comprobada en la base al aprobar). Falta probar la inscripción y los roles con un usuario real, que depende de los datos de prueba (DI-1).
